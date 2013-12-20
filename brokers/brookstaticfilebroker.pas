@@ -31,6 +31,9 @@ procedure BrookStaticFileRegisterDirectory(ARequestPath, ADirectory: string);
 
 implementation
 
+{$macro on}
+{$define fpc_fullversion:=20602}
+
 uses
   StrUtils, 
   {$if fpc_fullversion >= 20701}
